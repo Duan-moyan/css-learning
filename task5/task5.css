@@ -35,7 +35,7 @@ header>a>img{
 .avatar{
     width: 8rem;
     position: absolute;
-    left: 5%;
+    left: 2rem;
     top:50%;margin-top: -4rem;
 }
 .introduce{
