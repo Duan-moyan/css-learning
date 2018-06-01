@@ -25,7 +25,7 @@ header>a>img{
     top: 50%;
     margin-top: -1rem;
 }
-main{margin-bottom: 3rem}
+main{margin-bottom: 4rem}
 .profile{
     position: relative;
     width: 100%;
@@ -108,7 +108,7 @@ button.says{
     float: left;
     margin-left: 2.5%;
     bottom: 0;
-    border-radius: 0.5rem;
+    border-radius: 0.75rem;
     color: #5FC0CD;
     font-size: 2rem;
     border: #5fc0cd 2px solid;
@@ -123,7 +123,7 @@ button.call{
     bottom: 0;
     font-size: 2rem;
     color: white;
-    border-radius: 0.5rem;
+    border-radius: 0.75rem;
     border: #5fc0cd 2px solid;
     background-color:#5fc0cd;
     outline: none;
