@@ -1,0 +1,107 @@
+html{font-size: 10px}
+body{width: 100%;}
+html,body,ul,footer{margin: 0;padding: 0;}
+header{
+    width: 100%;
+    position: fixed;
+}
+.box1,.box2{
+    background-color: #5fc0cd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box2{
+    background-color: white;
+    border-bottom: 1px solid #e1e5e7;
+}
+.button{
+    display: inline-block;
+    text-align: center;
+    margin: 0.5rem;
+}
+.btn1{
+    font-size: 2rem;
+    color: white;
+    background-color: #55a8b3;
+}
+.btn2{
+    font-size: 2rem;
+    color: #5fc0cd;
+    background-color: white;
+}
+.box1 a{
+    position: absolute;
+    right: 1.5rem;
+}
+ header img{width: 2rem;}
+ .dropdown{
+     flex-grow: 1;
+     padding: 0.5rem 0;
+ }
+ .menu{
+     font-size: 1.8rem;
+     color: #999999;
+     background:none;
+     width: 100%;
+     padding: 0.5rem;
+     border-right: 1px solid #e1e5e7;
+     border-radius: 0;
+ }
+ul{
+    list-style: none;
+}
+main{padding: 10rem 0 8rem;}
+i{
+    background-image: url("task6-assets/css_sprites.png");
+    height: 25px;
+    width: 25px;
+    float: left;
+    margin:0.4rem 0.3rem;
+}
+i.date{background-position: -185px -123px;}
+i.address{background-position: -123px -73px;}
+li li{
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 1.8rem;
+    color: #999999;
+}
+ul ul{margin: 10px 0;}
+.pay{
+    display: flex;
+    justify-content: space-between;
+}
+.left{
+    color: black;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.right a{
+    color: red;
+    white-space: nowrap;
+}
+main li li a>span{color: #5FC0CD}
+main>ul>li{border-bottom: 1px solid #e1e5e7}
+footer{
+    width: 100%;
+    background-color: #f8fafb;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content:space-around;
+}
+footer>div{
+    margin: 1rem auto;
+    display: flex;
+    align-items: center;
+}
+footer>div>a{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.write img{width: 5rem;}
+.home img{width: 3rem}
+.mine img{width: 3rem}
