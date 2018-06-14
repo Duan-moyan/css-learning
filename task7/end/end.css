@@ -25,7 +25,7 @@ header div{
     align-items: center;
 }
 header img{width: 2.5rem}
-main{margin-top: 4.5rem}
+main{margin: 4.5rem auto 5rem}
 .result{
     padding: 1rem 10%;
     background-color: #29bde0;
