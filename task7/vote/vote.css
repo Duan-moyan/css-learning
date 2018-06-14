@@ -69,9 +69,8 @@ main{
     margin: 1.5rem 3.5rem;
 }
 .box{
-    position: relative;
-    display: inline-block;
-    padding: 4vw 6.2vw;
+    float: left;
+    padding: 4% 0 4% 10%;
 }
 .number{
     width: 20vw;
@@ -80,6 +79,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+    white-space: nowrap;
     background-color: #f5c97b;
 }
 .status{
@@ -89,6 +89,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+    white-space: nowrap;
     background-color: #83b09a;
 }
 .box img{
@@ -102,16 +103,18 @@ main{
     display: block;
 }
 footer{
-    width: 100vw;
+    width: 100%;
     position: fixed;
     bottom: 0;
     text-align: center;
     background-color: #29bde0;
 }
+footer a{width: 100%}
 footer button{
-    width: 80vw;
+    width: 80%;
+    display: block;
     font-size: 2.5rem;
     color: #fff;
     background-color: #fbb435;
-    margin: 1rem auto;
+    margin: 1rem 10%;
 }
