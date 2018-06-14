@@ -1,0 +1,102 @@
+
+body{
+    font-size: 62.5%;
+    background-color: white;
+    min-width: 300px;
+}
+html,body,p,.hint,ul,li{
+    margin: 0;
+    padding: 0;
+}
+a:link,a:visited,a:hover,a:active{text-decoration: none;}
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-size: 2rem;
+    background-color: #29bde0;
+    border-bottom: #74d4eb 1px solid;
+}
+header div{
+    width: 90%;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header img{width: 2.5rem}
+main{margin-top: 4.5rem}
+.result{
+    padding: 1rem 10%;
+    background-color: #29bde0;
+}
+.result img{
+    width: 10rem;
+    margin: 0 auto;
+    display: block;
+}
+.result p{
+    color: #ffc865;
+    font-size: 2rem;
+    line-height: 3rem;
+}
+.result>ul{
+    line-height: 2rem;
+    color: white;
+    font-size: 1.2rem;
+    overflow: hidden;
+}
+.result>ul>li{
+    display: flex;
+    justify-content: space-between;
+}
+ul ul{
+    display: flex;
+    width: 6rem;
+}
+ul ul li:first-child{
+    width: 4rem;
+    text-align-last: justify;
+}
+li{
+    list-style: none;
+    white-space: nowrap;
+}
+.process ul{
+    padding: 1rem 10%;
+    position: relative;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #ddd;
+}
+.date{color: #515151}
+.time{
+    color: #c7c7c7;
+    position: absolute;
+    right: 10%;
+}
+.process li{color: #a6a6a6;}
+footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    font-size: 1.5rem;
+    background-color: rgba(153,223,240,.5);
+}
+footer button{
+    width: 35%;
+    color: white;
+    margin: 1rem auto;
+    border-radius: 0.8rem;
+    white-space: nowrap;
+}
+.btn1{
+    float: left;
+    margin-left: 10%;
+    background-color: #f66f6f;
+}
+.btn2{
+    float: right;
+    margin-right: 10%;
+    background-color: #fbb435;
+}
+
