@@ -1,0 +1,182 @@
+/*通用设定*/
+html {
+    width: 100%;
+    font-size: 62.5%;
+    background-color: #FFF;
+}
+main{
+    overflow-x: hidden;
+    background: #fafafa!important;
+}
+h4 {
+    text-align: center;
+    color: #000000;
+    font-weight: 400;
+}
+h2, h3 {
+    display: inline-block;
+    white-space: nowrap;
+}
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.nowrap{white-space:nowrap;}
+/*header*/
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #29b078;
+    height: 4rem;
+    background-color: #fff;
+}
+/*导航*/
+.nav-1{
+    background: #29b078;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 0;
+}
+.nav-2 a{
+    text-align: center;
+    color: #fff!important;
+    border-bottom: #29b078 solid 2px;;
+}
+.nav-2>li:hover a{
+    border-bottom: #fff solid 2px;
+}
+.navbar-responsive-collapse{
+    border-color: #7e8c757a!important;
+}
+/*大图*/
+.png-1{
+    width: 100%;
+  }
+/*tree*/
+.tree {
+    margin: 3rem 0;
+    font-size: 1rem;
+}
+.tou {
+    color: #000000;
+}
+.tree a:hover{
+    text-decoration: none;
+}
+/*主内容*/
+.group-aside {
+    border: 1px #999999 solid;
+    border-radius: 2rem;
+}
+
+.aside {
+    display: flex;
+    justify-content: center;
+}
+
+.group-company {
+    width: 10rem;
+    line-height: 4rem;
+}
+
+.company {
+    display: block;
+    color:#29b078;
+}
+.circles {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 0.5rem;
+    border: 1px #f1a750 solid;
+    margin-right:1rem;
+}
+
+.company:hover {color: #f1a750;}
+.company:hover .circles {background: #f1a750;}
+
+.profile {
+    line-height: 3rem;
+}
+
+.img-profile {
+    float: left;
+}
+
+.group-text {
+    padding: 5rem;
+}
+.group-links {
+    line-height: 4rem;
+    white-space:nowrap;
+
+}
+.avatar {
+    margin-top: 2rem;
+}
+
+.study-step {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 4rem;
+    display: inline-block;
+    min-width: 8rem;
+}
+/*footer*/
+footer {
+    color: #ffffff;
+    background: #29b078;
+    width: 100%;
+}
+
+.note {
+    padding-top: 3rem;
+}
+
+.weixin {
+    float: right;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.qr-code {
+    float: right;
+    margin-right: 22px;
+}
+
+.wx-qr {
+    margin-bottom: 2rem;
+}
+
+.about-we {
+    white-space: nowrap;
+    margin-top: 3rem;
+}
+
+.under-note {
+    color: #ffffff;
+    font-size: 1rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #32c086;
+}
+/*媒体查询-footer*/
+@media screen and (max-width: 768px) {
+    .weixin {
+        float: left;
+    }
+    .qr-code {
+        float: left;
+        margin-left: 22px;
+    }
+    .about-we {
+        margin-top: 0;
+    }
+    .text-first-aside {
+        border-left: 0;
+    }
+}
+

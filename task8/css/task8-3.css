@@ -1,0 +1,269 @@
+/*通用设定*/
+html {
+    width: 100%;
+    font-size: 62.5%;
+}
+main{
+    background: #fafafa!important;
+    overflow-x: hidden;
+
+}
+h5 {
+    display: inline-block;
+    font-weight: bold;
+}
+h4 {
+    text-align: center;
+    color: #000000;
+    font-weight: 400;
+}
+h2, h3 {
+    display: inline-block;
+    white-space: nowrap;
+}
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.nowrap{white-space:nowrap;}
+/*header*/
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #29b078;
+    height: 4rem;
+    background-color: #fff;
+}
+/*导航*/
+.nav-1{
+    background: #29b078;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 0;
+}
+.nav-2 a{
+    text-align: center;
+    color: #fff!important;
+    border-bottom: #29b078 solid 2px;;
+}
+.nav-2>li:hover a{
+    border-bottom: #fff solid 2px;
+}
+.navbar-responsive-collapse{
+    border-color: #7e8c757a!important;
+}
+/*tree*/
+.tree {
+    margin: 3rem 0;
+}
+.tou {
+    color: #000000;
+}
+.tree a:hover{
+    text-decoration: none;
+}
+.text-success{
+    color: #29b078;
+}
+/*头部文字*/
+
+.text-head {
+    padding: 3rem 0;
+    margin: 0;
+    border-bottom: 1px #d0d6d9 solid;
+}
+.special-color-1{
+    color: #a1a1a1;
+}
+.text-head a {
+    color: #000000;
+}
+.text-career {
+    padding: 2rem 0;
+    margin: 0;
+    border-bottom: 1px #d0d6d9 solid;
+    border-top: 1px #d0d6d9 solid;
+    word-break: keep-all;
+}
+.text-career span a:hover{
+    background: #29b078;
+    color: #fff;
+}
+.text-career span a{
+    color: #000000;
+    margin: 0 1.5rem;
+    padding: 0 0.5rem;
+    text-decoration: none;
+}
+
+.text-direction {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-bottom: 1px #d0d6d9 solid;
+    height: 8rem;
+}
+/*职业表单*/
+.thumbnail{
+    margin-bottom: 0;
+}
+.special-color-2{
+    color: #a9a9a9;
+}
+.infor {
+    height: 50rem;
+    padding: 0;
+    margin-top: 3rem;
+    box-shadow: 3px 3px 3px #eeeded;
+}
+
+.infor>div {
+    border-top: 1px #edf1f2 solid;
+    padding: 0;
+}
+.row-one{
+    border-top: none!important;
+}
+.infor p {
+    padding: 1rem;
+    margin: 0;
+}
+
+.infor h4 {
+    padding-left: 1rem;
+}
+
+.zhiye {
+    float: left;
+    padding: 1rem;
+}
+
+.introduce {
+    padding-top: 1rem;
+    padding-left: 15rem;
+}
+.introduce>span{
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.introduce h5 {
+    padding: 0;
+}
+
+.row-two>div,.row-three>div {
+    padding: 0;
+}
+
+.row-two-right,.row-three-right {
+    border-left: 1px #edf1f2 solid;
+}
+
+.row-four {
+    display: flex;
+    align-items: center;
+}
+
+.row-four-right {
+    border-left: 1px #edf1f2 solid;
+}
+
+.row-four-left {
+    text-align: center;
+}
+
+.row-four>div {
+    padding: 0;
+}
+
+.row-four-right>div {
+    padding: 0;
+}
+
+.row-four-right p {
+    display: flex;
+    justify-content: space-between;
+}
+.border{
+    border-bottom:  1px #edf1f2 solid;
+    border-top:  1px #edf1f2 solid;
+}
+
+/*IOS工程师简介*/
+
+.bg-infor {
+    position: absolute;
+    top: 3rem;
+    height: 50rem;
+    padding: 5rem;
+    background: rgba(0,0,0,.70);
+    color: #ffffff;
+    margin-right: 1.5rem;
+    display: none;
+    font-size: 1.6rem;
+    word-break: break-all;
+    text-align:justify;
+}
+
+.infor-unit:hover .bg-infor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*footer*/
+footer {
+    color: #ffffff;
+    background: #29b078;
+    width: 100%;
+}
+
+.note {
+    padding-top: 3rem;
+}
+
+.weixin {
+    float: right;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.qr-code {
+    float: right;
+    margin-right: 22px;
+}
+
+.wx-qr {
+    margin-bottom: 2rem;
+}
+
+.about-we {
+    white-space: nowrap;
+    margin-top: 3rem;
+}
+
+.under-note {
+    color: #ffffff;
+    font-size: 1rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #32c086;
+}
+/*媒体查询-footer*/
+@media screen and (max-width: 768px) {
+    .weixin {
+        float: left;
+    }
+    .qr-code {
+        float: left;
+        margin-left: 22px;
+    }
+    .about-we {
+        margin-top: 0;
+    }
+    .text-first-aside {
+        border-left: 0;
+    }
+}

@@ -1,0 +1,182 @@
+/*通用设定*/
+html {
+    width: 100%;
+    font-size: 62.5%;
+    background-color: #FFF;
+}
+main{
+    overflow-x: hidden;
+    background: #fafafa!important;
+}
+h4 {
+    text-align: center;
+    color: #000000;
+    font-weight: 400;
+}
+h2, h3 {
+    display: inline-block;
+    white-space: nowrap;
+}
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.nowrap{white-space:nowrap;}
+/*header*/
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #29b078;
+    height: 4rem;
+    background-color: #fff;
+}
+/*导航*/
+.nav-1{
+    background: #29b078;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 0;
+}
+.nav-2 a{
+    text-align: center;
+    color: #fff!important;
+    border-bottom: #29b078 solid 2px;;
+}
+.nav-2>li:hover a{
+    border-bottom: #fff solid 2px;
+}
+.navbar-responsive-collapse{
+    border-color: #7e8c757a!important;
+}
+/*第一行模块*/
+.first-row {
+    margin: 10rem 0;
+}
+.text-first {
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text-first-aside {
+    border-left: 1px #dedede dashed;
+    display: flex;
+    justify-content: center;
+}
+.box-img {
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*第二行模块*/
+.step {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+}
+.step-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 4rem;
+    min-width: 8rem;
+    box-shadow: 0 0 5px #999999;
+}
+.step p {
+    padding: 0 1rem;
+    width: 14rem;
+}
+/*第三行模块*/
+.group-avatar {
+    margin: 6rem 0;
+}
+.avatar {
+    margin-top: 2rem;
+}
+.text-xinxi {
+    color: #999999;
+}
+/*第四行模块*/
+.group-company {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 5rem 0;
+}
+.company {
+    height: 18rem;
+    width: 22rem;
+    background: #ffffff;
+    border: 0;
+}
+.company:hover {box-shadow: 0 0 5px #999999;z-index: 9999}
+/*第五行模块*/
+aside {
+    width: 100%;
+    background: #ffffff;
+}
+.group-links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.group-links div {
+    line-height: 4rem;
+    white-space:nowrap;
+}
+/*页脚*/
+footer {
+    color: #ffffff;
+    background: #29b078;
+    width: 100%;
+}
+.note {
+    padding-top: 3rem;
+}
+.weixin {
+    float: right;
+    margin: 0;
+    white-space: nowrap;
+}
+.qr-code {
+    float: right;
+    margin-right: 22px;
+}
+.wx-qr {
+    margin-bottom: 2rem;
+}
+.about-we {
+    white-space: nowrap;
+    margin-top: 3.2rem;
+}
+.under-note {
+    color: #ffffff;
+    font-size: 1.2rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #32c086;
+}
+/*媒体查询-footer*/
+@media screen and (max-width: 768px) {
+    .weixin {
+        float: left;
+    }
+    .qr-code {
+        float: left;
+        margin-left: 22px;
+    }
+    .about-we {
+        margin-top: 0;
+    }
+    .text-first-aside {
+        border-left: 0;
+    }
+}
