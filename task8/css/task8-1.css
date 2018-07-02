@@ -110,8 +110,8 @@ a {
     margin: 5rem 0;
 }
 .company {
-    height: 18rem;
-    width: 22rem;
+    height: 14rem;
+    width: 20%;
     background: #ffffff;
     border: 0;
 }
@@ -120,6 +120,10 @@ a {
 aside {
     width: 100%;
     background: #ffffff;
+}
+aside a{
+    text-decoration: none;
+    color: #999;
 }
 .group-links {
     display: flex;
@@ -130,9 +134,14 @@ aside {
     line-height: 4rem;
     white-space:nowrap;
 }
+.group-links a:hover{
+    color: #999;
+    border-bottom: 1px solid #26a26f;
+    text-decoration: none;
+}
 /*页脚*/
 footer {
-    color: #ffffff;
+    color: #fff;
     background: #29b078;
     width: 100%;
 }
