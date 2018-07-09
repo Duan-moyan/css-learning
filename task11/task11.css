@@ -1,99 +1,139 @@
-html {
-  font-size: 62.5%;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  background: #eff0f4 !important;
-}
-
-header {
+.rel {
   position: relative;
-  background: #5fc0cd;
 }
-
-header .head span {
+.abs {
   position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 1.8rem;
-  color: #fff;
 }
-
-header .head .register {
-  float: right;
-}
-
-header .head .register a {
-  display: inline-block;
-  height: 4.4rem;
-  line-height: 4.4rem;
-  font-size: 1.6rem;
-  color: #fff;
-}
-
-header .head .down {
+.f-l {
   float: left;
 }
-
-header .head .down a {
-  display: inline-block;
-  height: 4.4rem;
-  line-height: 4.4rem;
-  font-size: 1.6rem;
-  color: #fff;
+.f-r {
+  float: right;
 }
-
-input {
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  background-color: #fff;
+  font-size: 62.5%;
+}
+body {
+  height: 100vh;
+  min-width: 320px;
+  max-width: 768px;
+  margin: auto;
+  padding: 0;
+  background-color: #eff0f4 !important;
+}
+header {
+  color: #fff;
+  background: #5fc0cd;
+  height: 5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+}
+header a {
+  display: block;
+  margin: auto 1.5rem auto 1rem;
+  float: left;
+}
+header a img {
+  margin-top: -0.3rem;
+}
+header a img:hover {
+  color: red;
+}
+main .icon-phone,
+main .icon-locked {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 14%;
+  height: 4rem;
+  float: left;
+}
+main .input_up,
+main .input_down {
+  margin: 0.8rem 0.1rem;
+  height: 4rem;
+  line-height: 4rem;
+  background: #fff;
+  font-size: 1.6rem;
+}
+main input {
   height: 2rem;
   border-style: none;
   outline: none;
   border-left: 1px solid #e1e5e7;
   text-indent: 2.5rem;
 }
-
-main .icon-phone, main .icon-locked {
-  display: flex;
-  float: left;
-  justify-content: center;
-  align-items: center;
-  width: 14%;
-  height: 4rem;
+main .btn {
+  width: 100%;
+  margin-top: 2rem;
+  padding: 0 5px;
 }
-
-main .input_up, main .input_down {
-  margin-top: 0.8rem;
-  font-size: 1.6rem;
-  height: 4rem;
-  line-height: 4rem;
-  background: #fff;
-}
-
-footer .foot-login {
+main .btn .login {
   width: 100%;
   height: 4.5rem;
   background: #5fc0cd;
   color: #fff;
-  margin: 2rem 0;
-  font-size: 1.8rem;
   border-style: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  font-size: 1.8rem;
 }
-
-.forgetpw {
+main .register {
+  margin-top: 1rem;
+  margin-left: 0.5rem;
   color: #5fc0cd;
+  text-decoration: none!important;
+  font-size: 1.6rem;
+  float: left;
+}
+main .register:hover {
+  color: red;
+}
+main .forgetpw {
+  margin-top: 1rem;
+  margin-right: 0.5rem;
+  color: #5fc0cd;
+  text-decoration: none!important;
   font-size: 1.6rem;
   float: right;
-  text-decoration: none !important;
 }
-
-.forgetpw:visited {
+main .forgetpw:hover {
+  color: red;
+}
+footer {
+  margin-top: 20rem;
+}
+footer .other-login-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .other-login-text span {
   color: #5fc0cd;
 }
-
-.login-mode {
+footer .other-login-text .left,
+footer .other-login-text .right {
+  height: 0.2rem;
+  width: 25%;
+  background-color: #999;
+}
+footer .other-login-icon {
   display: flex;
-  justify-content: space-around;
-  margin-top: 16rem;
+  align-items: center;
+  justify-content: center;
+}
+footer .other-login-icon div {
+  margin: 5rem 7.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .other-login-icon div img {
+  width: 5rem;
 }
