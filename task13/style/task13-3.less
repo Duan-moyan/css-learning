@@ -1,3 +1,5 @@
+/****************混合****************/
+
 .rel{
     position: relative;
 }
@@ -24,6 +26,8 @@
     -webkit-border-radius:@border-radius;
     -moz-border-radius:@border-radius;
 }
+
+/****************全局变量****************/
 
 *{
     padding: 0;
@@ -151,7 +155,7 @@ body{
         bottom: 0;
         background-color: rgba(153,223,240,.5);
 
-        div{
+        div{         
             a{
                 &:first-child{
                     button{
@@ -159,10 +163,11 @@ body{
                         background: #f66f6f;
                         width: 35%;
                         color: white;
-                        margin: 1rem auto;
                         .b-r(0.8rem);
                         white-space: nowrap;
                         .f-s(2rem);
+                        margin-top: 1rem;
+                        margin-bottom: 1rem;
                     }
                 }
                 &:last-child{
@@ -171,10 +176,11 @@ body{
                         background: #fbb435;
                         width: 35%;
                         color: white;
-                        margin: 1rem auto;
                         .b-r(0.8rem);
                         white-space: nowrap;
                         .f-s(2rem);
+                        margin-top: 1rem;
+                        margin-bottom: 1rem;
                     }
                 }
             }

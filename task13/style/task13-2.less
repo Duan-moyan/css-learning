@@ -1,3 +1,5 @@
+/****************混合****************/
+
 .rel{
     position: relative;
 }
@@ -24,6 +26,8 @@
     -webkit-border-radius:@border-radius;
     -moz-border-radius:@border-radius;
 }
+
+/****************全局变量****************/
 
 *{
     padding: 0;
@@ -117,7 +121,7 @@ main{
             top: 0;
             right: 0;
         }
-        .triangle-down{
+        .triangle-down{          //向下的三角形
             width: 0;
             height: 0;
             border-top: 2rem solid #b9e9f5;
@@ -134,6 +138,7 @@ main{
     }
     .box{
         .f-l(0);
+        .f-s(1.5rem);
         margin: 4% 0 4% 10%;
         &:hover img{
             display: block;
@@ -168,6 +173,8 @@ main{
         }
     }
 }
+
+/*当屏幕>768px时，main>.box和box中子元素的尺寸均要保持和屏幕为768px时一样*/
 
 @media screen and(min-width: 768px) {
     main>.box{

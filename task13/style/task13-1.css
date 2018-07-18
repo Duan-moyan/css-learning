@@ -1,3 +1,4 @@
+/****************混合****************/
 .rel {
   position: relative;
 }
@@ -8,6 +9,7 @@
   position: fixed;
   max-width: 768px;
 }
+/****************全局变量****************/
 * {
   padding: 0;
   margin: 0;
@@ -40,6 +42,7 @@ body {
 body .conter {
   overflow-x: hidden;
 }
+/**************通过input触发aside**********/
 input {
   display: none;
 }
@@ -61,6 +64,7 @@ input:checked ~ main {
   transition: 0.2s ease-out;
 }
 label {
+  /********点击span使input聚焦******/
   position: absolute;
   margin: 1.8rem 1rem;
   cursor: pointer;
@@ -159,6 +163,7 @@ main .game-version .version div {
   margin: 1.5rem auto;
 }
 main .game-version .version div a {
+  /******四个小圆圈*****/
   width: 1rem;
   height: 1rem;
   display: inline-block;
@@ -171,6 +176,7 @@ main .game-version .version div a:hover {
   background-color: #69d1e9;
 }
 main .game-version .version .next {
+  /****css做三角形，相对version定位****/
   position: absolute;
   top: 15rem;
   right: 2.5rem;
