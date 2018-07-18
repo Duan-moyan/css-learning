@@ -1,0 +1,178 @@
+.rel {
+  position: relative;
+}
+.abs {
+  position: absolute;
+}
+.fix {
+  position: fixed;
+  max-width: 768px;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover {
+  color: red;
+}
+ul {
+  list-style: none;
+}
+button {
+  cursor: pointer;
+}
+html {
+  font-size: 62.5%;
+  background: #fff;
+}
+body {
+  width: 100%;
+  height: 100%;
+  min-width: 320px;
+  max-width: 768px;
+  margin: 0 auto;
+  background: #29bde0;
+  position: relative;
+}
+body header {
+  width: 100%;
+  height: 5rem;
+  background: #29bde0;
+  top: 0;
+  z-index: 100;
+  position: fixed;
+  max-width: 768px;
+}
+body header div {
+  margin: auto 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  line-height: 5rem;
+  font-size: 2rem;
+}
+body header div a {
+  color: #fff;
+}
+body header div a img {
+  width: 2rem;
+}
+main {
+  width: 100%;
+  margin: 5rem 0 10rem;
+}
+main .song {
+  height: 5rem;
+  background: #b9e9f5;
+  white-space: nowrap;
+  line-height: 5rem;
+  padding-left: 3rem;
+  font-size: 1.5rem;
+  position: relative;
+}
+main .song audio {
+  top: 0;
+  right: 0;
+  opacity: 0;
+  z-index: 1;
+  transform: rotateZ(180deg);
+  position: absolute;
+}
+main .song img {
+  position: absolute;
+  width: 4rem;
+  margin: 0.5rem 1rem;
+  top: 0;
+  right: 0;
+}
+main .song .triangle-down {
+  width: 0;
+  height: 0;
+  border-top: 2rem solid #b9e9f5;
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid transparent;
+  margin-top: -0.6rem;
+  float: left;
+  margin-left: 1rem;
+}
+main .hint {
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 1.5rem 4.5rem;
+}
+main .box {
+  float: left;
+  margin-left: 0;
+  margin: 4% 0 4% 10%;
+}
+main .box:hover img {
+  display: block;
+}
+main .box .number {
+  width: 20vw;
+  height: 15vw;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  background-color: #f5c97b;
+}
+main .box .status {
+  width: 20vw;
+  height: 5vw;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  background-color: #83b09a;
+}
+main .box img {
+  width: 20vw;
+  height: 5vw;
+  margin: 1.5vw 0;
+  display: none;
+  position: absolute;
+}
+@media screen and (min-width: 768px) {
+  main > .box {
+    margin: 3rem 0 3rem 7.68rem;
+  }
+  main > .box .number {
+    width: 15.5rem;
+    height: 11.5rem;
+  }
+  main > .box .status {
+    width: 15.5rem;
+    height: 4rem;
+  }
+  main > .box img {
+    width: 15.5rem;
+    height: 4rem;
+    margin: 1rem 0;
+  }
+}
+footer {
+  width: 100%;
+  position: fixed;
+  max-width: 768px;
+  bottom: 0;
+  text-align: center;
+  background: #29bde0;
+}
+footer a {
+  width: 100%;
+}
+footer a button {
+  width: 80%;
+  color: #fff;
+  background-color: #fbb435;
+  font-size: 2.5rem;
+  margin: 1rem 10%;
+}

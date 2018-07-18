@@ -1,0 +1,182 @@
+.rel {
+  position: relative;
+}
+.abs {
+  position: absolute;
+}
+.fix {
+  position: fixed;
+  max-width: 768px;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover {
+  color: red;
+}
+ul {
+  list-style: none;
+}
+button {
+  cursor: pointer;
+}
+html {
+  font-size: 62.5%;
+  background: #fff;
+}
+body {
+  width: 100%;
+  min-width: 320px;
+  max-width: 768px;
+  margin: 0 auto;
+  background: #f0f0f0;
+  position: relative;
+}
+body .conter {
+  overflow-x: hidden;
+}
+input {
+  display: none;
+}
+input:checked ~ aside {
+  left: 0;
+  opacity: 1;
+}
+input:checked ~ .head {
+  margin-left: 75%;
+}
+input:checked ~ main {
+  margin-left: 75%;
+}
+.head {
+  position: relative;
+  width: 100%;
+  height: 5rem;
+  background: #29bde0;
+  transition: 0.2s ease-out;
+}
+label {
+  position: absolute;
+  margin: 1.8rem 1rem;
+  cursor: pointer;
+}
+label span {
+  display: block;
+  width: 2rem;
+  height: 0.2rem;
+  margin-top: 4px;
+  border-radius: 1px;
+  background-color: #fff;
+}
+label span:first-child {
+  margin-top: 0;
+}
+aside {
+  position: absolute;
+  width: 75%;
+  left: -75%;
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+  background: #fff;
+  transition: 0.2s ease-out;
+}
+aside ul li {
+  border-bottom: 1px #f0f0f0 solid;
+  font-size: 1.4rem;
+  height: 4.5rem;
+  line-height: 4.5rem;
+}
+aside ul li .left {
+  vertical-align: middle;
+  margin-right: 2rem;
+}
+aside ul li .right {
+  width: 1.2rem;
+  float: right;
+  margin-right: 5rem;
+  margin-top: 1.3rem;
+}
+main {
+  width: 100%;
+  margin-bottom: 2rem;
+  transition: 0.2s ease-out;
+}
+main .last-game {
+  margin: 2.5rem 6%;
+  background-color: #ffffff;
+  text-align: center;
+  height: 5.5rem;
+  line-height: 5.5rem;
+  color: #9a9a9a;
+  font-size: 2rem;
+}
+main .last-game a {
+  display: block;
+  float: right;
+  margin-right: 2rem;
+}
+main .last-game a img {
+  width: 1.8rem;
+  margin-top: 1.3rem;
+}
+main .game-version {
+  margin: 1.5rem 6%;
+  background-color: #fff;
+}
+main .game-version .game {
+  font-size: 2.5rem;
+  height: 6rem;
+  line-height: 6rem;
+  color: #fbb435;
+  text-align: center;
+  border-bottom: 1px solid #fdd793;
+}
+main .game-version .version {
+  position: relative;
+  text-align: center;
+}
+main .game-version .version > a:not(:last-child) {
+  width: 80%;
+  height: 7rem;
+  line-height: 7rem;
+  display: inline-block;
+  font-size: 2rem;
+  margin: 1.5rem auto;
+  color: #fff;
+  background-color: #69d1e9;
+}
+main .game-version .version p {
+  color: #787878;
+  margin: 0 auto;
+}
+main .game-version .version div {
+  margin: 1.5rem auto;
+}
+main .game-version .version div a {
+  width: 1rem;
+  height: 1rem;
+  display: inline-block;
+  border: 1px solid #f0f0f0;
+  border-radius: 100%;
+  background-color: #f0f0f0;
+  margin: 0.5rem;
+}
+main .game-version .version div a:hover {
+  background-color: #69d1e9;
+}
+main .game-version .version .next {
+  position: absolute;
+  top: 15rem;
+  right: 2.5rem;
+  width: 0;
+  height: 0;
+  border-top: 1.5rem solid transparent;
+  border-left: 3rem solid #fbb435;
+  border-bottom: 1.5rem solid transparent;
+}
