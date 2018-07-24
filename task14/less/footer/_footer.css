@@ -1,0 +1,52 @@
+/*页脚*/
+footer {
+  color: #fff;
+  background: #29b078;
+  width: 100%;
+}
+.note {
+  padding-top: 3rem;
+}
+.note div p a {
+  color: #fff;
+}
+.note div p a:hover {
+  color: #132443;
+}
+.weixin {
+  float: right;
+  margin: 0;
+  white-space: nowrap;
+}
+.qr-code {
+  float: right;
+  margin-right: 22px;
+}
+.wx-qr {
+  margin-bottom: 2rem;
+}
+.under-note {
+  color: #ffffff;
+  font-size: 1.2rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #32c086;
+}
+/*媒体查询-footer*/
+@media screen and (max-width: 768px) {
+  .weixin {
+    float: left;
+  }
+  .qr-code {
+    float: left;
+    margin-left: 22px;
+  }
+  .about-we {
+    margin-top: 0;
+  }
+  .text-first-aside {
+    border-left: 0;
+  }
+}

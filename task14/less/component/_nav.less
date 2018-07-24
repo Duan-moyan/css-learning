@@ -1,0 +1,82 @@
+@import url(../base/_mixin.less);
+
+.nav-header {
+    background-color: #29B078;
+    padding: 1rem 0;
+
+    .nav {
+        .flex-c(space-between, center);
+        flex-wrap: wrap; // logo
+        .nav-brand {
+            .flex-c;
+            img {
+                width: 25rem;
+            }
+        } // 折叠按钮样式
+        .nav-button-border {
+            display: none;
+            margin: auto 0;
+            padding: 1rem;
+            border: .1rem solid #3fb886;
+            label {
+                display: inline-block;
+                padding: .3rem 0;
+                width: 2rem;
+                height: .5rem;
+                border-top: .5rem solid #94d8bc;
+                border-bottom: .5rem solid #94d8bc;
+                background: #94d8bc;
+                background-clip: content-box;
+            }
+            @media screen and (max-width: 575px) {
+                .flex-c;
+            }
+        } // 文本样式
+        .nav-text {
+            flex-grow: 1;
+            @media screen and (max-width: 575px) {
+                li {
+                    .nav-link {
+                        display: none;
+                    }
+                }
+            } //导航栏文字换行响应式
+            @media screen and (max-width: 575px) {
+                flex-basis: 100%;
+            }
+            .navbar-nav {
+                display: flex;
+                justify-content: flex-end;
+                @media screen and (max-width: 575px) {
+                    margin: auto -15px;
+                }
+                li {
+                    margin-left: 10px;
+                    padding: 0 5px;
+                    .nav-link {
+                        padding: 0;
+                        color: #ffffff;
+                        white-space: nowrap;
+                    }
+                    &:hover {
+                        border-bottom: .02rem solid #ffffff;
+                    } // 清除边距
+                    @media screen and (max-width: 575px) {
+                        margin-left: 0;
+                    }
+                } //导航栏文字缩小垂直排列
+                @media screen and (max-width: 575px) {
+                    flex-direction: column;
+                }
+            }
+        } //点击事件
+        @media screen and (max-width: 575px) {
+            #nav-button:checked~.nav-text {
+                .nav-link {
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}

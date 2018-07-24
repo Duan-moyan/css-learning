@@ -1,0 +1,65 @@
+/*大图*/
+.png-1 {
+  width: 100%;
+}
+/*tree*/
+.tree {
+  margin: 3rem 0;
+  font-size: 1rem;
+}
+.tree .tou {
+  color: #000000;
+}
+.tree .text-success {
+  color: #3c763d;
+}
+/*主内容*/
+.aside {
+  display: flex;
+  justify-content: center;
+}
+.aside .group-company {
+  width: 10rem;
+  line-height: 4rem;
+}
+.aside .group-company .company {
+  display: block;
+  color: #29b078;
+  white-space: nowrap;
+}
+.aside .group-company .company .circles {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0.5rem;
+  border: 1px #f1a750 solid;
+  margin-right: 1rem;
+}
+.aside .group-company .company:hover {
+  color: #f1a750;
+}
+.aside .group-company .company:hover .circles {
+  background: #f1a750;
+}
+.thumbnail {
+  display: block;
+  padding: 4px;
+  margin-bottom: 20px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-transition: border 0.2s ease-in-out;
+  -o-transition: border 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out;
+}
+.profile {
+  line-height: 3rem;
+  color: #333;
+}
+.profile .group-text {
+  padding: 5rem;
+}
+.profile .group-text .img-profile {
+  float: left;
+}

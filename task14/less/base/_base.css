@@ -1,0 +1,38 @@
+html {
+  width: 100%;
+  font-size: 62.5%;
+  background-color: #FFF;
+}
+body {
+  color: #333;
+  font-size: 1.4rem;
+}
+main {
+  overflow-x: hidden;
+  background: #fafafa !important;
+}
+h5 {
+  display: inline-block;
+  font-weight: bold;
+  margin: 1rem 0;
+  font-size: 1.4rem;
+}
+h4 {
+  text-align: center;
+  color: #000000;
+  font-weight: 400;
+}
+h2,
+h3 {
+  display: inline-block;
+  white-space: nowrap;
+}
+a {
+  text-decoration: none;
+}
+img {
+  vertical-align: middle;
+}
+.nowrap {
+  white-space: nowrap;
+}

@@ -1,0 +1,105 @@
+/*第一行模块*/
+.first-row {
+  margin: 10rem 0;
+}
+.first-row .text-first {
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.first-row .text-first .box-img {
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.first-row .text-first-aside {
+  border-left: 1px #dedede dashed;
+  display: flex;
+  justify-content: center;
+}
+/*第二行模块*/
+.step {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+}
+.step .step-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 4rem;
+  min-width: 8rem;
+  box-shadow: 0 0 5px #999999;
+}
+.step p {
+  padding: 0 1rem;
+  width: 14rem;
+}
+/*第三行模块*/
+.group-avatar {
+  margin: 6rem 0;
+}
+.group-avatar .thumbnail {
+  display: block;
+  padding: 4px;
+  margin-bottom: 20px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-transition: border 0.2s ease-in-out;
+  -o-transition: border 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out;
+}
+.group-avatar .thumbnail .avatar {
+  margin-top: 2rem;
+}
+.group-avatar .thumbnail .caption .text-xinxi {
+  color: #999999;
+}
+/*第四行模块*/
+.group-company {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 5rem 0;
+}
+.group-company .company {
+  height: 14rem;
+  width: 20%;
+  background: #ffffff;
+  border: 0;
+}
+.group-company .company:hover {
+  box-shadow: 0 0 5px #999999;
+  z-index: 9999;
+}
+/*第五行模块*/
+aside {
+  width: 100%;
+  background: #ffffff;
+}
+aside a {
+  text-decoration: none;
+  color: #999;
+}
+.group-links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.group-links div {
+  line-height: 4rem;
+  white-space: nowrap;
+}
+.group-links div a:hover {
+  color: #999;
+  border-bottom: 1px solid #26a26f;
+  text-decoration: none;
+}

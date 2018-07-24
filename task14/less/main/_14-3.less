@@ -1,0 +1,156 @@
+/*tree*/
+.tree {
+    margin: 3rem 0;
+    font-size: 1.3rem;
+
+    .tou {
+        color: #000000;
+    }
+    .text-success {
+        color: #29b078;
+    }
+}
+/*头部文字*/
+
+.text-career {
+    padding: 2rem 0;
+    margin: 0;
+    border-bottom: 1px #d0d6d9 solid;
+    border-top: 1px #d0d6d9 solid;
+    word-break: keep-all;
+
+    .special-color-1{
+        color: #a1a1a1;
+    }
+    span {
+        a {
+            color: #000000;
+            margin: 0 1.5rem;
+            padding: 0 0.5rem;
+            text-decoration: none;
+
+            &:hover{
+                background: #29b078;
+                color: #fff;
+            }
+        }
+    }
+}
+
+.text-direction {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-bottom: 1px #d0d6d9 solid;
+    height: 8rem;
+}
+/*职业表单*/
+.thumbnail{
+    display: block;
+    padding: 4px;
+    margin-bottom: 0;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: border .2s ease-in-out;
+    -o-transition: border .2s ease-in-out;
+    transition: border .2s ease-in-out;
+}
+
+.infor {
+    height: 50rem;
+    padding: 0;
+    margin-top: 3rem;
+    box-shadow: 3px 3px 3px #eeeded;
+
+    &>div {
+        border-top: 1px #edf1f2 solid;
+        padding: 0;
+    }
+    .row-one{
+        border-top: none!important;
+
+        .zhiye {
+            float: left;
+            padding: 1rem;
+        }
+        .introduce {
+            padding-top: 1rem;
+            padding-left: 15rem;
+
+            h5 {
+                padding: 0;
+            }
+            &>span{
+                word-wrap: break-word;
+                word-break: break-all;
+            }
+        }
+    }
+    p {
+        padding: 1rem;
+        margin: 0;
+    }
+    .row-two,.row-three {
+        div {
+            padding: 0;
+        }
+        .row-two-right,.row-three-right {
+            border-left: 1px #edf1f2 solid;
+        }
+    }
+    .row-four {
+        display: flex;
+        align-items: center;
+        &>div {
+            padding: 0;
+        }
+        .row-four-right {
+            border-left: 1px #edf1f2 solid;
+
+            &>div {
+                padding: 0;
+
+                .border{
+                    border-bottom:  1px #edf1f2 solid;
+                    border-top:  1px #edf1f2 solid;
+                }
+            }
+            p {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+        .row-four-left {
+            text-align: center;
+        }
+    }
+    .special-color-2{
+        color: #a9a9a9;
+    }
+}
+
+
+
+/*IOS工程师简介*/
+
+.bg-infor {
+    position: absolute;
+    top: 3rem;
+    height: 50rem;
+    padding: 0 5rem;
+    background: rgba(0,0,0,.70);
+    color: #ffffff;
+    margin-right: 1.5rem;
+    display: none;
+    font-size: 1.6rem;
+    word-break: break-all;
+    text-align:justify;
+}
+
+.infor-unit:hover .bg-infor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
