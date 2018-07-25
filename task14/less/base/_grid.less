@@ -16,11 +16,6 @@
     margin-right: auto;
     margin-left: auto;
     min-width: 960px;/*为了兼容不支持媒体选择的浏览器*/
-    -webkit-transition:width 0.9s cubic-bezier(1,-0.02, 0, 1.04);// for Safari and Chrome
-    -moz-transition:width 0.9s cubic-bezier(1,-0.02, 0, 1.04);// for Firefox
-    -o-transition:width 0.9s cubic-bezier(1,-0.02, 0, 1.04);// for Opera
-    -ms-transition:width 0.9s cubic-bezier(1,-0.02, 0, 1.04);// for ie
-    transition:width 0.5s cubic-bezier(1,-0.02, 0, 1.04);
     -webkit-box-sizing: border-box;
     box-sizing:border-box;
     -moz-box-sizing:border-box;
@@ -29,7 +24,7 @@
     min-width: 0;
     width: 100%;
 }
-.row{
+.row,.container{
     &:before,
     &:after{
         content: "";

@@ -64,7 +64,8 @@
         transition: border .2s ease-in-out;
 
         .avatar {
-            margin-top: 2rem;
+            display: block;
+            margin: 2rem auto 0;
         }
         .caption {
             .text-xinxi {
@@ -89,6 +90,18 @@
 
         &:hover {
             box-shadow: 0 0 5px #999999;z-index: 9999;
+        }
+    }
+    @media screen and (max-width: 575px) {
+        .company {
+            width: 30%;
+            margin-top: 1rem;
+        }
+    }
+    @media screen and (max-width: 425px) {
+        .company {
+            width: 50%;
+            margin-top: 1rem;
         }
     }
 }

@@ -58,7 +58,8 @@
   transition: border 0.2s ease-in-out;
 }
 .group-avatar .thumbnail .avatar {
-  margin-top: 2rem;
+  display: block;
+  margin: 2rem auto 0;
 }
 .group-avatar .thumbnail .caption .text-xinxi {
   color: #999999;
@@ -79,6 +80,18 @@
 .group-company .company:hover {
   box-shadow: 0 0 5px #999999;
   z-index: 9999;
+}
+@media screen and (max-width: 575px) {
+  .group-company .company {
+    width: 30%;
+    margin-top: 1rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .group-company .company {
+    width: 50%;
+    margin-top: 1rem;
+  }
 }
 /*第五行模块*/
 aside {

@@ -37,11 +37,6 @@ table {
   margin-left: auto;
   min-width: 960px;
   /*为了兼容不支持媒体选择的浏览器*/
-  -webkit-transition: width 0.9s cubic-bezier(1, -0.02, 0, 1.04);
-  -moz-transition: width 0.9s cubic-bezier(1, -0.02, 0, 1.04);
-  -o-transition: width 0.9s cubic-bezier(1, -0.02, 0, 1.04);
-  -ms-transition: width 0.9s cubic-bezier(1, -0.02, 0, 1.04);
-  transition: width 0.5s cubic-bezier(1, -0.02, 0, 1.04);
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -51,7 +46,9 @@ table {
   width: 100%;
 }
 .row:before,
-.row:after {
+.container:before,
+.row:after,
+.container:after {
   content: "";
   display: table;
   clear: both;
@@ -767,6 +764,7 @@ table {
 }
 html {
   width: 100%;
+  min-width: 320px;
   font-size: 62.5%;
   background-color: #FFF;
 }
@@ -829,6 +827,11 @@ img {
 }
 .nav-header .nav .nav-brand img {
   width: 25rem;
+}
+@media screen and (max-width: 375px) {
+  .nav-header .nav .nav-brand img {
+    width: 20rem;
+  }
 }
 .nav-header .nav .nav-button-border {
   display: none;

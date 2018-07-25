@@ -16,6 +16,11 @@
 .nav-header .nav .nav-brand img {
   width: 25rem;
 }
+@media screen and (max-width: 375px) {
+  .nav-header .nav .nav-brand img {
+    width: 20rem;
+  }
+}
 .nav-header .nav .nav-button-border {
   display: none;
   margin: auto 0;
