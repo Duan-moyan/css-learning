@@ -16,9 +16,9 @@
 .nav-header .nav .nav-brand img {
   width: 25rem;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
   .nav-header .nav .nav-brand img {
-    width: 20rem;
+    width: 10rem;
   }
 }
 .nav-header .nav .nav-button-border {
@@ -42,6 +42,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+}
+@media screen and (max-width: 425px) {
+  .nav-header .nav .nav-button-border {
+    padding: 0.5rem;
+  }
+  .nav-header .nav .nav-button-border label {
+    height: 0.3rem;
+    width: 1.8rem;
+    border-top: 0.3rem solid #94d8bc;
+    border-bottom: 0.3rem solid #94d8bc;
   }
 }
 .nav-header .nav .nav-text {

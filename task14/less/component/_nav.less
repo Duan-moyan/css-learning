@@ -12,9 +12,9 @@
             img {
                 width: 25rem;
             }
-            @media screen and (max-width: 375px) {
+            @media screen and (max-width: 425px) {
                 img {
-                    width: 20rem;
+                    width: 10rem;
                 }
             }
         } // 折叠按钮样式
@@ -36,7 +36,20 @@
             @media screen and (max-width: 575px) {
                 .flex-c;
             }
-        } // 文本样式
+        }
+		@media screen and (max-width: 425px) {
+        	.nav-button-border {
+        		padding: .5rem;
+
+        		label {
+        			height: .3rem;
+        			width: 1.8rem;
+        			border-top: .3rem solid #94d8bc;
+					border-bottom: .3rem solid #94d8bc;
+        		}
+        	}
+        }
+         // 文本样式
         .nav-text {
             flex-grow: 1;
             @media screen and (max-width: 575px) {

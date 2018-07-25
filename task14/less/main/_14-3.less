@@ -63,6 +63,8 @@
     padding: 0;
     margin-top: 3rem;
     box-shadow: 3px 3px 3px #eeeded;
+    position: relative;
+    overflow: hidden;
 
     &>div {
         border-top: 1px #edf1f2 solid;
@@ -129,28 +131,37 @@
     .special-color-2{
         color: #a9a9a9;
     }
+
+    /*IOS工程师简介*/
+
+    .bg-infor {
+        height: 50rem;
+        padding: 0 5rem;
+        background: rgba(0,0,0,.70);
+        color: #fff;
+        font-size: 1.6rem;
+        position: absolute;
+        top: -50.2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        word-break: break-all;
+        text-align:justify;
+        -webkit-transition: 0.5s ease-in-out;
+        -o-transition: 0.5s ease-in-out;
+        transition: 0.5s ease-in-out;
+    }
+
+    &:hover .bg-infor {
+        top: 0rem;
+    }
+}
+
+main {
+    margin-bottom: 10rem;
 }
 
 
 
-/*IOS工程师简介*/
 
-.bg-infor {
-    position: absolute;
-    top: 3rem;
-    height: 50rem;
-    padding: 0 5rem;
-    background: rgba(0,0,0,.70);
-    color: #ffffff;
-    margin-right: 1.5rem;
-    display: none;
-    font-size: 1.6rem;
-    word-break: break-all;
-    text-align:justify;
-}
 
-.infor-unit:hover .bg-infor {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
